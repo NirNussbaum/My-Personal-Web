@@ -41,8 +41,23 @@ body {
     height: 28rem;
     display: inline-block;
     margin-bottom: 7rem !important;
+    position: relative;
 }
 
+.input-cursor {
+    display: inline-block;
+    width: 3px;
+    height: 2rem;
+    background-color: white;
+    animation: blink .6s linear infinite alternate;
+}
+
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+  }
 
 /*Second Div-*/
 .Eduction-Div {
@@ -88,8 +103,8 @@ body {
 }
 
 .Employment-Div img {
-    height: 120px;
-    width: 130px;
+    height: 8rem;
+    width: 9rem;
     cursor: pointer;
 }
 
@@ -184,4 +199,9 @@ body {
     bottom: 4px;
     height: 1.6rem;
     width: 2rem;
+}
+
+.foot-img:hover {
+    height: 2.2rem;
+    width: 2.7rem;
 }

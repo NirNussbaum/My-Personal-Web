@@ -1,4 +1,24 @@
 
+/*Header Div*/
+const imNirNussbaum = document.querySelector(".head-Div h1");
+const sen = imNirNussbaum.textContent.trim().split("");
+let i = 0;
+const writeNirNussbaum = () => {
+    i = 0;
+    imNirNussbaum.textContent = "";
+    time = setInterval(addLetter, 175)
+}
+
+const addLetter = () => {
+    if (i == sen.length) clearInterval(time);
+    else {
+        imNirNussbaum.textContent += sen[i];
+        i++
+    }
+}
+writeNirNussbaum();
+setInterval(writeNirNussbaum, 10000);
+
 /*Employment div*/
 const parIcon = document.querySelector(".paratrooperImage");
 const parDiv = document.querySelector(".paratroopers-div");
@@ -6,10 +26,14 @@ const busManIcon = document.querySelector(".businessmanImage");
 const busManDiv = document.querySelector(".ganim-div");
 //Change current div depend on icon click.
 parIcon.addEventListener("click", () => {
+    parIcon.classList.remove("opacity-50")
+    busManIcon.classList.add("opacity-50")
     parDiv.classList.remove("d-none");
     busManDiv.classList.add("d-none");
 });
 busManIcon.addEventListener("click", () => {
+    parIcon.classList.add("opacity-50")
+    busManIcon.classList.remove("opacity-50")
     busManDiv.classList.remove("d-none");
     parDiv.classList.add("d-none");
 });
