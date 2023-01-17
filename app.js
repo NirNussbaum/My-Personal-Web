@@ -6,7 +6,7 @@ let i = 0;
 const writeNirNussbaum = () => {
     i = 0;
     imNirNussbaum.textContent = "";
-    time = setInterval(addLetter, 175)
+    time = setInterval(addLetter, 150)
 }
 
 const addLetter = () => {

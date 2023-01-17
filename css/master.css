@@ -33,15 +33,14 @@ body {
 }
 
 .head-Div h1 {
-    font-size: 3.6rem;
+    font-size: 3.4rem;
 }
 
 .personalImage {
     width: 30rem;
     height: 28rem;
     display: inline-block;
-    margin-bottom: 7rem !important;
-    position: relative;
+    margin-bottom: 7rem;
 }
 
 .input-cursor {
@@ -53,11 +52,22 @@ body {
 }
 
 @keyframes blink {
-    0% {opacity: 1;}
-    40% {opacity: 1;}
-    60% {opacity: 0;}
-    100% {opacity: 0;}
-  }
+    0% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
 
 /*Second Div-*/
 .Eduction-Div {
@@ -204,4 +214,66 @@ body {
 .foot-img:hover {
     height: 2.2rem;
     width: 2.7rem;
+}
+
+
+/*Moblie styles*/
+@media screen and (min-width: 320px) and (max-width: 520px) {
+
+    /*navbar*/
+    .navbar {
+        padding-bottom: 1.5rem !important;
+
+    }
+
+    .nav-link {
+        font-size: 22px;
+    }
+
+    /*First Div-*/
+    .personalImage {
+        margin-bottom: 0;
+    }
+
+    .header {
+        text-align: center;
+        top: 0;
+        padding-bottom: 8rem;
+    }
+
+    /*Fourth Div-*/
+    .Projects-Hobbies-Div {
+        color: white;
+        background-color: #88bd9c;
+    }
+
+    .Projects-Hobbies-Div img {
+        width: 37rem;
+        height: 20rem;
+    }
+
+
+    .snakeGameImg {
+        margin-top: 7rem;
+    }
+
+    .compraBetsImg {
+        width: 37rem;
+        margin-top: 0;
+    }
+
+    .Projects-Hobbies-Div button {
+        height: 3.5rem;
+        width: 25rem;
+    }
+
+    .snakeGameTxt {
+        top: 4rem;
+        text-align: left;
+    }
+
+    .compraBetsTxt {
+        text-align: left;
+        top: 4rem;
+    }
 }
