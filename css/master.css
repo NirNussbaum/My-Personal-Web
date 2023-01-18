@@ -211,9 +211,8 @@ body {
     width: 2.7rem;
 }
 
-
-/*Moblie styles*/
-@media screen and (min-width: 320px) and (max-width: 520px) {
+/*Responsive Design*/
+@media screen and (max-width: 1000px) {
 
     /*First Div-*/
     .personalImage {
