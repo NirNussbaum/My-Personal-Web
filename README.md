@@ -1,7 +1,3 @@
-## **How to run the project**
-- Download the web dictionary.
-- Open index.html.
-
 ## **The input validation**
 1. **First & Last name** - does not include any digits, the text length must be higher than two.
 2. **Subject** - must be length higher than two.
